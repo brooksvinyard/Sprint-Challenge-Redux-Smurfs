@@ -1,4 +1,4 @@
-import { FETCHING_SMURFS, FETCHING_SUCCESS, FETCHING_FAILURE, ADDING_SMURFS } from '../actions';
+import { FETCHING_SMURFS, FETCHING_SUCCESS, FETCHING_FAILURE, ADDING_SMURF } from '../actions';
 
 /*
   Be sure to import in all of the action types from `../actions`
@@ -58,7 +58,7 @@ const smurfReducer = (state = initialState, action) => {
         error: action.payload
       };
     
-    case ADDING_SMURFS:
+    case ADDING_SMURF:
       return {
         ...state,
         addingSmurf: true,
