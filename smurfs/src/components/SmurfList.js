@@ -12,12 +12,7 @@ class SmurfList extends React.Component {
                 <div className="Smurf-List" >
                     {this.props.smurfs.map(smurf => {
                         return (
-                            <Smurf
-                                name={smurf.name}
-                                id={smurf.id}
-                                age={smurf.age}
-                                height={smurf.height}
-                                key={smurf.id}
+                            <Smurf name={smurf.name} id={smurf.id} age={smurf.age} height={smurf.height} key={smurf.id}
                             />
                         );
                     })}
@@ -27,8 +22,6 @@ class SmurfList extends React.Component {
     }
 }
 
-// export default SmurfList;
-
 
 const mapStateToProps = state => ({
     smurfs: state.smurfs
@@ -36,5 +29,5 @@ const mapStateToProps = state => ({
 
 export default connect(
     mapStateToProps,
-    {   }
+    {}
 )(SmurfList);

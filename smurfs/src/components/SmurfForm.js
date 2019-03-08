@@ -27,6 +27,7 @@ class SmurfForm extends Component {
       age: '',
       height: ''
     });
+    this.props.history.push('/');
   }
 
   handleInputChange = e => {
@@ -55,18 +56,16 @@ class SmurfForm extends Component {
             value={this.state.height}
             name="height"
           />
-          <button type="submit">Add to the village</button>
+          <button type="submit">Add to village</button>
         </form>
       </div>
     );
   }
 }
 
-// export default SmurfForm;
-
 
 const mapStateToProps = state => ({
-    // smurfs: state.smurfs
+
   });
   
 export default connect(
